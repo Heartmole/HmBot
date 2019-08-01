@@ -25,9 +25,9 @@ class HmBotCommand(commands.Cog):
                         kwargs["lang"] = lang
                         message = self.MSG_LANG_ERROR
         # Parse message and send it through the bot
-        kwargs["prefix"]  = ctx.prefix
+        kwargs["prefix"] = ctx.prefix
         kwargs["command"] = ctx.prefix + ctx.invoked_with
-        return await ctx.send(message["message"].format(**kwargs))
+        return await ctx.send(message.format(**kwargs))
     
     def get_selected_language(self, cur, ctx):
         """Get the selected language for the current guild."""

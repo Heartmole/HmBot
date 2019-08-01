@@ -14,21 +14,21 @@ class HmBotLang(HmBotCommand):
     
     @commands.command(name="lang")
     @commands.guild_only()
-    async def manage_languages(self, ctx, lang_code=None):
+    async def manage_languages(self, ctx, action=None):
         """Changes the bot language, or shows the list of supported languages."""
-        # If no language code is provided, print usage
-        if lang_code is None:
+        # If no action is provided, print usage
+        if action is None:
             await self.send_message("lang_usage", ctx)
             return
-        # If language code provided is "list", print the supported languages
-        if lang_code == "list":
+        # If action provided is "list", print the supported languages
+        if action == "list":
             languages = self.get_language_list()
             await self.send_message("lang_list", ctx, languages=languages)
             return
         # Get the language information from database
-        lang = self.get_language_info(lang_code)
+        lang = self.get_language_info(action)
         if lang is None:
-            await self.send_message("lang_unknown", ctx, lang=lang_code)
+            await self.send_message("lang_unknown", ctx, lang=action)
             return
         # Change the language based on current guild information
         self.change_language(ctx, lang["id"])
@@ -43,9 +43,10 @@ class HmBotLang(HmBotCommand):
                 cur.execute("SELECT * FROM hm_lang WHERE active = true")
                 languages = cur.fetchall()
         # Format language list
-        def format_language(lang):
-            return "- {code} ({name})".format(code=lang["code"], name=lang["name"])
         return "\n".join(map(format_language, languages))
+    
+    def format_language(lang):
+        return "- {code} ({name})".format(code=lang["code"], name=lang["name"])
     
     def get_language_info(self, lang_code):
         """Get the language information based on its code."""

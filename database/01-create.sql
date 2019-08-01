@@ -18,7 +18,7 @@ CREATE TABLE hm_message (
     id serial PRIMARY KEY,
     code varchar(32) NOT NULL,
     lang_id integer NOT NULL REFERENCES hm_lang,
-    message varchar(128) NOT NULL,
+    message varchar(256) NOT NULL,
     active boolean NOT NULL DEFAULT true
 );
 
@@ -31,10 +31,11 @@ CREATE TABLE hm_guild (
 
 -- Table 04. React functionality
 CREATE TABLE hm_react (
-    id serial PRIMARY KEY,
+    id bigserial NOT NULL,
     guild_id bigint NOT NULL,
-    user_id integer NOT NULL,
-    emote_id integer NOT NULL,
+    user_id bigint NOT NULL,
+    emote_id bigint NOT NULL,
+    owner_id bigint NOT NULL,
     active boolean NOT NULL DEFAULT true
 );
 
