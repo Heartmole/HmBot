@@ -1,0 +1,19 @@
+{
+    "name": "English",
+    "ping_first": "Please wait...",
+    "ping_second": "It took **{seconds} ms** to send this message.",
+    "lang_usage": "Type `{command} set <language>` to change the language from this bot.\nType `{command} list` to see the supported languages.",
+    "lang_list": "**List of supported languages**",
+    "lang_selected": "English selected as the bot language.",
+    "lang_invalid": "Language `{language}` not found.\nType `{command} list` to see the supported languages.",
+    "lang_error": "An error occured while trying to change the language, sorry :(",
+    "flag_usage": "Type `{command} <flag>` with an image attached, to apply a flag filter to that image.\nType `{command} list` to see the existing flag filters.",
+    "flag_list": "**List of flag filters**\n{flags}",
+    "react_usage": "Type `{command} add :emoji: @user` to react subsequent messages from the specified user with that emoji.\nType `{command} remove :emoji: @user` to remove that react.\nType `{command} list` to see both the reacts you own and the reacts given to you.",
+    "react_own_list": "**List of reacts you own in this server**",
+    "react_own_format": "- {emote} for {user}",
+    "react_own_max": "Sorry, you can own at most {count} reactions. Try deleting one to free some space.",
+    "react_given_list": "**List of reacts given to you in this server**",
+    "react_given_format": "- {emote} (given by {owner})",
+    "react_given_max": "Sorry, there can be at most {count} reactions given to {user}. If you happen to own one of them, try deleting one to free some space."
+}

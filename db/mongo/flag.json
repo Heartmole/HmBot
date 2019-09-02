@@ -1,0 +1,55 @@
+{
+    "ancap": {
+        "en": "Anarcho-capitalism",
+        "es": "Anarco-capitalismo"
+    },
+    "ancom": {
+        "en": "Anarcho-communism",
+        "es": "Anarco-comunismo"
+    },
+    "ar": "Argentina",
+    "bo": "Bolivia",
+    "ck": {
+        "en": "Cook Islands",
+        "es": "Islas Cook"
+    },
+    "cl": "Chile",
+    "ec": "Ecuador",
+    "eu": {
+        "en": "European Union",
+        "es": "Unión Europea"
+    },
+    "gay": "LGBT",
+    "kek": {
+        "en": "Kekistan",
+        "es": "Kekistán"
+    },
+    "mx": {
+        "en": "Mexico",
+        "es": "México"
+    },
+    "nz": {
+        "en": "New Zealand",
+        "es": "Nueva Zelanda"
+    },
+    "pa": "Paraguay",
+    "pe": {
+        "en": "Peru",
+        "es": "Perú"
+    },
+    "su": {
+        "en": "Soviet Union",
+        "es": "Unión Soviética"
+    },
+    "trans": {
+        "en": "Transgender",
+        "es": "Transgénero"
+    },
+    "tw": {
+        "en": "Taiwan",
+        "es": "Taiwán"
+    },
+    "ur": "Uruguay",
+    "ve": "Venezuela",
+    "zh": "China"
+}

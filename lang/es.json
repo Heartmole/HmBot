@@ -1,0 +1,19 @@
+{
+    "name": "Español",
+    "ping_first": "Por favor espere...",
+    "ping_second": "Tomó **{seconds} ms** en enviar este mensaje.",
+    "lang_usage": "Escribe `{command} set <idioma>` para cambiar el idioma de este bot.\nEscribe `{command} list` para ver los idiomas soportados.",
+    "lang_list": "**Lista de idiomas soportados**",
+    "lang_selected": "Se seleccionó el español como el idioma para el bot.",
+    "lang_invalid": "No se encontró el idioma `{language}`.\nEscribe `{command} list` para ver los idiomas soportados.",
+    "lang_error": "Ocurrió un error mientras se intentaba cambiar el idioma, mil disculpas :(",
+    "flag_usage": "Escribe `{command} <bandera>` con una imagen adjunta, para aplicar un filtro con la bandera a dicha imagen.\nEscribe `{command} list` para ver las filtros de banderas existentes.",
+    "flag_list": "**Lista de filtros de banderas**\n{flags}",
+    "react_usage": "Escribe `{command} add :emoji: @usuario` para reaccionar con el emoji a los próximmos mensajes del usuario especificado.\nEscribe `{command} remove :emoji: @user` para remover dicha reacción.\nEscribe `{command} list` para ver tanto las reacciones que creaste como las que han creado para ti.",
+    "react_own_list": "**Lista de reacciones que posees en este servidor**",
+    "react_own_format": "- {emote} para {user}",
+    "react_own_max": "Lo siento, no puedes poseer más de {count} reacciones. Intenta borrar una reacción para liberar un poco de espacio.",
+    "react_given_list": "**Lista de reacciones de otros hacia ti en este servidor**",
+    "react_given_format": "- {emote} (otorgado por {owner})",
+    "react_given_max": "Lo siento, no pueden haber más de {count} reacciones hacia {user}. Si posees una de estas reacciones, intenta borrar una para liberar un poco de espacio."
+}
